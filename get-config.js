@@ -74,6 +74,7 @@ const getConfig = (config, provider, servicePath) => {
     schema: schemaContent,
     userPoolConfig: config.userPoolConfig,
     openIdConnectConfig: config.openIdConnectConfig,
+    introspectionConfig: config.introspectionConfig,
     // TODO verify dataSources structure
     dataSources,
     mappingTemplatesLocation,

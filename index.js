@@ -295,6 +295,7 @@ class ServerlessAppsyncPlugin {
             IatTTL: config.openIdConnectConfig.iatTTL,
             AuthTTL: config.openIdConnectConfig.authTTL,
           },
+          IntrospectionConfig: config.introspectionConfig || 'ENABLED',
           LogConfig: !config.logConfig ? undefined : {
             CloudWatchLogsRoleArn:
               config.logConfig.loggingRoleArn ||
