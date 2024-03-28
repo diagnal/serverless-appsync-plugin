@@ -585,6 +585,7 @@ class ServerlessAppsyncPlugin {
             config.authenticationType !== 'OPENID_CONNECT'
               ? undefined
               : this.getOpenIDConnectConfig(config),
+          IntrospectionConfig: config.introspectionConfig || 'ENABLED',
           LogConfig: !config.logConfig
             ? undefined
             : {

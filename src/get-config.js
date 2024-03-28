@@ -120,6 +120,7 @@ const getConfig = (config, provider, servicePath) => {
     additionalAuthenticationProviders:
       config.additionalAuthenticationProviders || [],
     schema: schemaContent,
+    introspectionConfig: config.introspectionConfig,
     // TODO verify dataSources structure
     dataSources,
     defaultMappingTemplates: config.defaultMappingTemplates || {},
